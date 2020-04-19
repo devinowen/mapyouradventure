@@ -12,7 +12,7 @@ import { useWindowDimensions } from '../../hooks';
 
 import styles from './Root.module.scss';
 
-const SEND_EMAIL_URL: string = 'http://localhost:3000/api/email';
+const SEND_EMAIL_URL: string = '/api/email';
 
 const Root: React.FC = () => {
   const [zoom, setZoom] = useState(8);
@@ -50,7 +50,7 @@ const Root: React.FC = () => {
           }
         });
         if (process.browser) {
-          window.location.href = 'https://mapyouradventure.com/';
+          window.location.href = 'https://mapyouradventure.com/create-confirmation';
         }
       } catch (error) {
         setSubmitError(true);
