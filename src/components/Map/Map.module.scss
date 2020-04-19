@@ -1,0 +1,26 @@
+@import '../../styles/theme.scss';
+
+.mapContainer {
+  .map {
+    width: 450px;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid $black;
+    border-radius: 2px;
+  }
+
+  @media screen and (max-width: 550px) {
+    .map {
+      width: 350px;
+      height: 350px;
+    }
+  }
+
+  .confirm {
+    font-size: 14px;
+    color: $gray;
+    text-align: center;
+    margin-top: .5rem;
+  }
+}

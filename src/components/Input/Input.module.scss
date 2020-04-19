@@ -1,0 +1,30 @@
+@import '../../styles/theme.scss';
+
+.inputContainer {
+
+  .label {
+    font-size: 16px;
+  }
+
+  .input {
+    border: 2px solid $black;
+    border-radius: 2px;
+    margin-top: 5px;
+    padding: 15px 15px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    color: $black;
+    background-color: transparent;
+
+    &:focus {
+      outline: none;
+      border: 2px solid $blue;
+    }
+  }
+
+  .error {
+    color: $red;
+    font-size: 14px;
+  }
+}

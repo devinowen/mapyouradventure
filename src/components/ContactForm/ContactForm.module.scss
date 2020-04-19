@@ -1,0 +1,51 @@
+@import '../../styles/theme.scss';
+
+.formContainer {
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+
+  .form {
+    width: 100%;
+
+    .inputs {
+      margin-bottom: 2rem;
+
+      input, textarea {
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    button {
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+
+      &:hover {
+        svg {
+          left: 1rem;
+        }
+      }
+  
+      svg {
+        position: relative;
+        left: .5rem;
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    .error {
+      color: $gray;
+      font-size: 14px;
+      margin-top: 1rem;
+    }
+  }
+}
