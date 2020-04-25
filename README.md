@@ -4,12 +4,25 @@
 
 ## Development
 
-First, `cd` into the `webapp` directory and run the development server:
+First, ensure that you have a `.env.development.local` file in the root directory with the following credentials:
+
+```
+EMAIL_NAME="<your_email@example.com>"
+EMAIL_PASSWORD="<your_email_password>"
+```
+
+Install dependencies (if running for the first time), and start the development server:
 
 ```bash
-$ cd mapyouradventure
 $ yarn
 $ yarn dev
 ```
+*If using `npm` instead of `yarn`, run `npm run dev`*
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Deployment
+
+Merge your changes into `master` and push to GitHub (or merge a PR that's managed in GitHub).
+
+That's it! Vercel will pick up any changes to `master` on GitHub and package and release a new version automatically.

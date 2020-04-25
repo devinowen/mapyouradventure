@@ -5,7 +5,7 @@ import styles from './Footer.module.scss';
 const Footer: React.FC = () => {
   return (
     <footer className={styles.footer}>
-      <a href="https://mapyouradventure.com">
+      <a href="https://www.mapyouradventure.com/">
         Map Your Adventure
       </a>
       <div className={styles.secondary}>

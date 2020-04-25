@@ -50,7 +50,7 @@ const Root: React.FC = () => {
           }
         });
         if (process.browser) {
-          window.location.href = 'https://mapyouradventure.com/create-confirmation';
+          window.location.href = 'https://www.mapyouradventure.com/custom-confirmation';
         }
       } catch (error) {
         setSubmitError(true);

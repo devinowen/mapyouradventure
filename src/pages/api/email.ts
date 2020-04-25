@@ -46,7 +46,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
 
       const mailOptions = {
         from: `"${name}" <${email}>`,
-        to: EMAIL_NAME,
+        to: 'ian@mapyouradventure.com',
         subject: 'New custom map request',
         text: `
         Custom map request from ${name}.
@@ -59,6 +59,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
         Notes: ${notes}
 
         Map Coordinates
+        Map: https://www.google.com/maps/@${latLng.lat},${latLng.lng},${zoom}z
         Lat: ${latLng.lat}
         Long: ${latLng.lng}
         Zoom: ${zoom}
