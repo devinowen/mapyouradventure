@@ -9,6 +9,7 @@ First, ensure that you have a `.env.development.local` file in the root director
 ```
 EMAIL_NAME="<your_email@example.com>"
 EMAIL_PASSWORD="<your_email_password>"
+MAPS_API_KEY="<your_maps_api_key>"
 ```
 
 Install dependencies (if running for the first time), and start the development server:
