@@ -13,7 +13,6 @@ interface MapProps {
   latLng: LatLng;
 }
 
-const libraries = ['places'];
 const MAPS_API_KEY = process.env.MAPS_API_KEY;
 
 const Map = ({setZoom, setLatLng, latLng}: MapProps) => {
@@ -39,7 +38,7 @@ const Map = ({setZoom, setLatLng, latLng}: MapProps) => {
         <LoadScript
           id="script-loader"
           googleMapsApiKey={MAPS_API_KEY}
-          libraries={libraries}
+          libraries={['places']}
         >
           <GoogleMap
             id='create-map'
