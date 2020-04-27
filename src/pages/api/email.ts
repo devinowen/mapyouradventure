@@ -59,7 +59,8 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
         Notes: ${notes}
 
         Map Coordinates
-        Map: https://www.google.com/maps/@${latLng.lat},${latLng.lng},${zoom}z
+        https://www.google.com/maps/@${latLng.lat},${latLng.lng},${zoom}z
+
         Lat: ${latLng.lat}
         Long: ${latLng.lng}
         Zoom: ${zoom}
